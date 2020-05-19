@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+const VIDEOS = {
+  fast: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-fast.mp4',
+  slow: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-slow.mp4',
+  cute: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-cute.mp4',
+  eek: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-eek.mp4'
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1> Video Player</h1>
+      <Menu/>
+      <Video/>
+
     </div>
   );
 }
